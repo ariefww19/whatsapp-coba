@@ -1,0 +1,31 @@
+2025/04/05-21:23:51.069 35c4 Reusing MANIFEST D:\whatsapp-coba\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/05-21:23:51.069 35c4 Recovering log #278
+2025/04/05-21:23:51.089 35c4 Reusing old log D:\whatsapp-coba\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000278.log 
+2025/04/05-21:23:52.928 304c Level-0 table #292: started
+2025/04/05-21:23:52.983 304c Level-0 table #292: 149041 bytes OK
+2025/04/05-21:23:53.020 304c Delete type=0 #278
+2025/04/05-21:23:53.020 304c Manual compaction at level-0 from '\x00\x1e\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1f\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/04/05-21:23:54.339 180 Compacting 1@1 + 10@2 files
+2025/04/05-21:23:54.733 180 Generated table #293@1: 31682 keys, 2199117 bytes
+2025/04/05-21:23:55.396 180 Generated table #294@1: 3364 keys, 2162279 bytes
+2025/04/05-21:23:55.720 180 Generated table #295@1: 2371 keys, 2168419 bytes
+2025/04/05-21:23:56.032 180 Generated table #296@1: 10151 keys, 2159927 bytes
+2025/04/05-21:23:56.386 180 Generated table #297@1: 33684 keys, 2260044 bytes
+2025/04/05-21:23:56.642 180 Generated table #298@1: 17349 keys, 2184038 bytes
+2025/04/05-21:23:56.973 180 Generated table #299@1: 63124 keys, 2201480 bytes
+2025/04/05-21:23:57.335 180 Generated table #300@1: 104570 keys, 2256282 bytes
+2025/04/05-21:23:57.717 180 Generated table #301@1: 104807 keys, 2256489 bytes
+2025/04/05-21:23:57.785 180 Generated table #302@1: 4822 keys, 102720 bytes
+2025/04/05-21:23:57.785 180 Compacted 1@1 + 10@2 files => 19950795 bytes
+2025/04/05-21:23:57.831 180 compacted to: files[ 0 0 10 0 0 0 0 ]
+2025/04/05-21:23:57.831 180 Delete type=2 #280
+2025/04/05-21:23:57.832 180 Delete type=2 #281
+2025/04/05-21:23:57.832 180 Delete type=2 #282
+2025/04/05-21:23:57.832 180 Delete type=2 #283
+2025/04/05-21:23:57.832 180 Delete type=2 #284
+2025/04/05-21:23:57.832 180 Delete type=2 #285
+2025/04/05-21:23:57.832 180 Delete type=2 #286
+2025/04/05-21:23:57.832 180 Delete type=2 #287
+2025/04/05-21:23:57.832 180 Delete type=2 #288
+2025/04/05-21:23:57.832 180 Delete type=2 #289
+2025/04/05-21:23:57.832 180 Delete type=2 #292

@@ -1,0 +1,31 @@
+2025/04/05-21:30:53.173 2890 Reusing MANIFEST D:\whatsapp-coba\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/05-21:30:53.173 2890 Recovering log #291
+2025/04/05-21:30:53.197 2890 Reusing old log D:\whatsapp-coba\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000291.log 
+2025/04/05-21:30:56.455 13fc Level-0 table #305: started
+2025/04/05-21:30:56.617 13fc Level-0 table #305: 265095 bytes OK
+2025/04/05-21:30:56.641 13fc Delete type=0 #291
+2025/04/05-21:30:56.641 13fc Manual compaction at level-0 from '\x00\x1f\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00 \x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/04/05-21:30:57.998 13fc Compacting 1@1 + 10@2 files
+2025/04/05-21:30:58.384 13fc Generated table #306@1: 33246 keys, 2202412 bytes
+2025/04/05-21:30:58.665 13fc Generated table #307@1: 3294 keys, 2153313 bytes
+2025/04/05-21:30:58.936 13fc Generated table #308@1: 2340 keys, 2153833 bytes
+2025/04/05-21:30:59.347 13fc Generated table #309@1: 8222 keys, 2157425 bytes
+2025/04/05-21:30:59.709 13fc Generated table #310@1: 33967 keys, 2259041 bytes
+2025/04/05-21:31:00.066 13fc Generated table #311@1: 19116 keys, 2191107 bytes
+2025/04/05-21:31:00.429 13fc Generated table #312@1: 57732 keys, 2193737 bytes
+2025/04/05-21:31:00.882 13fc Generated table #313@1: 104513 keys, 2256027 bytes
+2025/04/05-21:31:01.268 13fc Generated table #314@1: 104673 keys, 2256088 bytes
+2025/04/05-21:31:01.358 13fc Generated table #315@1: 10452 keys, 222749 bytes
+2025/04/05-21:31:01.358 13fc Compacted 1@1 + 10@2 files => 20045732 bytes
+2025/04/05-21:31:01.381 13fc compacted to: files[ 0 0 10 0 0 0 0 ]
+2025/04/05-21:31:01.382 13fc Delete type=2 #293
+2025/04/05-21:31:01.382 13fc Delete type=2 #294
+2025/04/05-21:31:01.382 13fc Delete type=2 #295
+2025/04/05-21:31:01.382 13fc Delete type=2 #296
+2025/04/05-21:31:01.382 13fc Delete type=2 #297
+2025/04/05-21:31:01.382 13fc Delete type=2 #298
+2025/04/05-21:31:01.382 13fc Delete type=2 #299
+2025/04/05-21:31:01.382 13fc Delete type=2 #300
+2025/04/05-21:31:01.382 13fc Delete type=2 #301
+2025/04/05-21:31:01.382 13fc Delete type=2 #302
+2025/04/05-21:31:01.382 13fc Delete type=2 #305

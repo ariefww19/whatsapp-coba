@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kirim Gambar Base64 ke WhatsApp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+    }
+    img {
+      max-width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Form Kirim Gambar Base64 ke WhatsApp</h2>
+  <form id="waForm">
+    <label for="number">Nomor WhatsApp (contoh: 6281234567890):</label>
+    <input type="text" id="number" required />
+
+    <label for="caption">Caption (opsional):</label>
+    <textarea id="caption" rows="3"></textarea>
+
+    <label for="image">Pilih Gambar:</label>
+    <input type="file" id="image" accept="image/*" required />
+
+    <img id="preview" src="" alt="Preview" />
+
+    <button type="submit">Kirim ke WhatsApp</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('waForm');
+    const imageInput = document.getElementById('image');
+    const preview = document.getElementById('preview');
+    let base64Image = '';
+    let mimeType = '';
+
+    imageInput.addEventListener('change', () => {
+      const file = imageInput.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      mimeType = file.type;
+
+      reader.onload = function (e) {
+        base64Image = e.target.result.split(',')[1]; // ambil base64 tanpa prefix
+        preview.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const number = document.getElementById('number').value;
+      const caption = document.getElementById('caption').value;
+
+      if (!base64Image || !mimeType || !number) {
+        alert('Pastikan semua data sudah diisi!');
+        return;
+      }
+
+      const payload = {
+        number,
+        caption,
+        imageBase64: base64Image,
+        mimeType
+      };
+
+      try {
+        const response = await fetch('http://localhost:3000/send-base64', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json();
+        if (result.success) {
+          alert('✅ Gambar berhasil dikirim!');
+        } else {
+          alert('❌ Gagal: ' + result.message);
+        }
+      } catch (err) {
+        console.error(err);
+        alert('Terjadi kesalahan saat mengirim gambar');
+      }
+    });
+  </script>
+</body>
+</html>
